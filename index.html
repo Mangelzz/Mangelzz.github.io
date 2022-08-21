@@ -1,15 +1,25 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="estilos.css">
-    </head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
     <body>
         <header>
             <img class="logo" src="img/Vector.png" alt="Logo-Alura/png">
         </header>
-        <main>
+        <main class="main">
             <div class="seccion-1">
                 <div class="izquierda">
                     <textarea class="area" cols="30" rows="10" placeholder="Ingrese el texto aquí" autofocus></textarea>
+                </div>
+                <div class="advertencia">
+                    <p>&#9888; Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="buttons">
                     <input class="btn-encriptar" type="button" value="Encriptar">
@@ -21,20 +31,22 @@
                     <img class="figura" src="img/Muñeco.png" alt="muñeco.png">
                 </div>
                 <div class="h3">
-                    <h3>Ningún texto fue encontrado.</h3>
+                    <h3>Encriptación o Descriptación</h3>
                 </div>
                 <div class="parrafo">
-                    <textarea class="textarea" cols="30" rows="10" placeholder="Ingrese el texto que desea encriptar o desencriptar." disabled></textarea>
+                    <textarea class="textarea" placeholder="Aquí se mostrará el contenido que desea encriptar o desencriptar" disabled></textarea>
                 </div>
                 <div class="copiar">
                     <input class="btn-copiar" type="button" value="Copiar">
                 </div>
             </div>
         </main>
-        <hr>
         <footer>
-            Desarrollado por Miguel Ángel G. Ramírez
+            <p class="realizado"> &copy; 2022 Desarrollado por <strong>Miguel Ángel G. Ramírez</strong></p> 
+            <a href="https://github.com/Mangelzz"><img src="img/github.png" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/miguel-angel-dds/"><img src="img/linkedin.png" alt="linkedin"></a>
         </footer>
         <script src="app.js"></script>
-    </body>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script
+</body>
 </html>

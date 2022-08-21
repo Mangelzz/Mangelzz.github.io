@@ -23,7 +23,7 @@ function desencriptar(){
 
 function recuperarTexto() {
     var area = document.querySelector(".area");
-    return area.value;
+    return area.value.toLowerCase();
 }
 
 function ocultarElementos() {
@@ -80,6 +80,11 @@ function desencriptarTexto(mensaje) {
 
 function copiar(){
     var contenido = document.querySelector(".textarea");
-    navigator.clipboard.writeText(contenido.innerHTML);
-    alert("¡Se Copió!")
+    navigator.clipboard.writeText(contenido.value);
+    contenido = "";
+    aviso();
+}
+
+function aviso(){
+    swal("¡El texto se ha copiado correctamente!", "", "success");
 }
